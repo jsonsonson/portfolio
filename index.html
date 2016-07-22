@@ -15,7 +15,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -71,7 +71,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <img class="clip-ellipse" src="img/jason_avery.jpg" alt="Jason Avery">
                     <div class="intro-text">
                         <span class="name">Jason Avery</span>
                         <hr class="star-light">
@@ -93,67 +93,333 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                <div id="hyperMonsters" class="col-md-12 portfolio-item">
+                  <div class="portfolio-link">
+                    <a class="collapse-link" href="#hyperMonsters">
+                      <h3 data-toggle="collapse" data-target="#hyperMonstersCollapse">Hyper Monsters</h3>
+                    </a>
+                    <div id="hyperMonstersCollapse" class="collapse">
+                      Hyper Monsters is a puzzle game for both Android and iOS by Foul Cow. I developed the Android version as
+                      a solo developer. Development of Hyper Monsters is my first large Android project, and throughout development,
+                      I learned many things about Android development, such as memory management to effeciently store images for many
+                      Android devices.<br>
+                      The Android version can be found <a href="https://play.google.com/store/apps/details?id=com.hypermonsters&hl=en" target="_blank">here</a> on the Google Play Store.
+                      <div id="hyperMonstersCarousel" class="carousel slide image-carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img class="carousel-preview-image" src="img/hyperMonsters/1.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/hyperMonsters/2.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/hyperMonsters/3.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/hyperMonsters/4.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/hyperMonsters/5.png">
+                          </div>
                         </div>
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#hyperMonstersCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#hyperMonstersCarousel" data-slide-to="1"></li>
+                          <li data-target="#hyperMonstersCarousel" data-slide-to="2"></li>
+                          <li data-target="#hyperMonstersCarousel" data-slide-to="3"></li>
+                          <li data-target="#hyperMonstersCarousel" data-slide-to="4"></li>
+                        </ol>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#hyperMonstersCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#hyperMonstersCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      <h4>Technologies</h4>
+                      Java, Android SDK
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div id="drawALine" class="col-md-12 portfolio-item">
+                  <div class="portfolio-link">
+                    <a class="collapse-link" href="#drawALine">
+                      <h3 data-toggle="collapse" data-target="#drawALineCollapse">Draw A Line<small> (in development)</small></h3>
+                    </a>
+                    <div id="drawALineCollapse" class="collapse">
+                      Draw A Line is an Android application I am currently working. It's a simple game focusing around a simple concept:
+                      connecting lines. I dove into exploring an OpenGL 2D graphics engine to effectively manage an image based application.<br>
+                      Development videos can be found <a href="https://www.youtube.com/playlist?list=PL92wnjmCMMxuRA-miHRH9OSvU95PuhAq-" target="_blank">here</a>.
+                      <div id="drawALineCarousel" class="carousel slide image-carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img class="carousel-preview-image" src="img/drawALine/1.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/drawALine/2.png">
+                          </div>
+                        </div>
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#drawALineCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#drawALineCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#drawALineCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#drawALineCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      <h4>Technologies</h4>
+                      Java, AndEngine, Android SDK
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div id="healthTracker" class="col-md-12 portfolio-item">
+                  <div class="portfolio-link">
+                    <a class="collapse-link" href="#healthTracker">
+                      <h3 data-toggle="collapse" data-target="#healthTrackerCollapse">[m]pirik Health Tracker</h3>
+                    </a>
+                    <div id="healthTrackerCollapse" class="collapse">
+                      Health Tracker is an Android healthcare application I developed with my Senior Design group at Milwaukee School of Engineering for <a href="https://www.mpirik.com/" target="_blank">[m]pirik</a>.
+                      It's focused around bringing post-procedure health data collection into the comfort of the patient's home by tracking health data from multiple sources, such as Fitbit. It also allows the patient
+                      to perform exercises at home, allowing doctor and clinic visits to focus on the patient's progress and the next steps to recovery, as opposed to filling time with exercises. It contains the Android
+                      application, and a server, both of which I have worked on, but my primary work was done on the Android application.
+                      <div id="healthTrackerCarousel" class="carousel slide image-carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img class="carousel-preview-image" src="img/healthTracker/1.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/healthTracker/2.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/healthTracker/3.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/healthTracker/4.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/healthTracker/5.png">
+                          </div>
+                        </div>
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#healthTrackerCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#healthTrackerCarousel" data-slide-to="1"></li>
+                          <li data-target="#healthTrackerCarousel" data-slide-to="2"></li>
+                          <li data-target="#healthTrackerCarousel" data-slide-to="3"></li>
+                          <li data-target="#healthTrackerCarousel" data-slide-to="4"></li>
+                        </ol>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#healthTrackerCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#healthTrackerCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      <h4>Technologies</h4>
+                      Java, Android SDK, JavaScript, NodeJS, Sails.js
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div id="rangeSorter" class="col-md-12 portfolio-item">
+                  <div class="portfolio-link">
+                    <a class="collapse-link" href="#rangeSorter">
+                      <h3 data-toggle="collapse" data-target="#rangeSorterCollapse">Range Sorter</h3>
                         <!-- <img src="img/portfolio/cabin.png" class="img-responsive" alt=""> -->
-                        <p>Something</p>
                     </a>
+                    <div id="rangeSorterCollapse" class="collapse">
+                      Range Sorter is an integer sorting algorithm that I wrote while attending Milwaukee School of Engineering. Under its intended use, it
+                      can sort 100,000,000 elements within 7 seconds - faster than Java's built-in sorting algorithm.
+                      <h4>Technologies</h4>
+                      Java
+                    </div>
+                  </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                <hr>
+                <div id="videoSync" class="col-md-12 portfolio-item">
+                  <div class="portfolio-link">
+                    <a class="collapse-link" href="#videoSync">
+                      <h3 data-toggle="collapse" data-target="#videoSyncCollapse">Video Sync<small> (in development)</small></h3>
+                    </a>
+                    <div id="videoSyncCollapse" class="collapse">
+                      Video Sync is a web application that is in early development. It will allow users to watch videos, such as YouTube videos, together with other members
+                      with video synchronization through a server.
+                      <h4>Technologies</h4>
+                      JavaScript, HTML, NodeJS, Sails.js, WebSockets
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div id="trello" class="col-md-12 portfolio-item">
+                  <div class="portfolio-link">
+                    <a class="collapse-link" href="#trello">
+                      <h3 data-toggle="collapse" data-target="#trelloCollapse">Trello JSON to Markdown</h3>
+                    </a>
+                    <div id="trelloCollapse" class="collapse">
+                      Trello JSON to Markdown is an open-sourced utility I wrote for <a href="https://www.mpirik.com/" target="_blank">[m]pirik</a>. It takes a user's specified boards, and
+                      exports them to an organized folder and file structure of markdown files, showing the history of the boards and each card. Using rate limiting techniques,
+                      it allows free accounts to collect data throughout the entire history of their boards.<br>
+                      The repository can be found <a href="https://github.com/mpirik/trello-json-to-markdown" target="_blank">here</a>.
+                      <h4>Technologies</h4>
+                      JavaScript, NodeJS
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div id="lecturer" class="col-md-12 portfolio-item">
+                  <div class="portfolio-link">
+                    <a class="collapse-link" href="#lecturer">
+                      <h3 data-toggle="collapse" data-target="#lecturerCollapse">Interactive Lecturer</h3>
+                    </a>
+                    <div id="lecturerCollapse" class="collapse">
+                      Interactive Lecturer is an application a group and I developed for a class at Milwaukee School of Engineering. It allows for presenters to create interactive lectures
+                      that the viewers can follow along by viewing the external display view or a visiting a webpage displaying the lecture. The presenter can add in questions and receive real-time
+                      answers from the viewers, as well as mark up the slides with pens in real-time.
+                      <div id="lecturerCarousel" class="carousel slide image-carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img class="carousel-preview-image" src="img/lecturer/1.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/lecturer/2.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/lecturer/3.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/lecturer/4.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/lecturer/5.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/lecturer/6.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/lecturer/7.png">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/lecturer/8.png">
+                          </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
-                    </a>
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#lecturerCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#lecturerCarousel" data-slide-to="1"></li>
+                          <li data-target="#lecturerCarousel" data-slide-to="2"></li>
+                          <li data-target="#lecturerCarousel" data-slide-to="3"></li>
+                          <li data-target="#lecturerCarousel" data-slide-to="4"></li>
+                          <li data-target="#lecturerCarousel" data-slide-to="5"></li>
+                          <li data-target="#lecturerCarousel" data-slide-to="6"></li>
+                          <li data-target="#lecturerCarousel" data-slide-to="7"></li>
+                        </ol>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#lecturerCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#lecturerCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      <h4>Technologies</h4>
+                      C++, Qt Creator, Qt Framework
+                    </div>
+                  </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
+                <hr>
+                <div id="mpirikSite" class="col-md-12 portfolio-item">
+                  <div class="portfolio-link">
+                    <a class="collapse-link" href="#mpirikSite">
+                      <h3 data-toggle="collapse" data-target="#mpirikSiteCollapse">[m]pirik Website</h3>
+                    </a>
+                    <div id="mpirikSiteCollapse" class="collapse">
+                      During the summer of 2015, I built a responsive website for <a href="https://www.mpirik.com/" target="_blank">[m]pirik</a>. The version I worked on
+                      can be found <a href="http://web.archive.org/web/20160501062138/https://www.mpirik.com/" target="_blank">here</a>.
+                      <div id="mpirikSiteCarousel" class="carousel slide image-carousel" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                            <img class="carousel-preview-image" src="img/mpirikWebsite/1.jpg">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/mpirikWebsite/2.jpg">
+                          </div>
+
+                          <div class="item">
+                            <img class="carousel-preview-image" src="img/mpirikWebsite/3.jpg">
+                          </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                    </a>
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#mpirikSiteCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#mpirikSiteCarousel" data-slide-to="1"></li>
+                          <li data-target="#mpirikSiteCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#mpirikSiteCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#mpirikSiteCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      <h4>Technologies</h4>
+                      HTML, JavaScript, Bootstrap, WordPress, PHP
+                    </div>
+                  </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
-                </div>
+                <hr>
             </div>
         </div>
     </section>
@@ -163,21 +429,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>About Me</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
+                    <p>
+                      I graduated from Milwaukee School of Engineering with a Bachelor of Science degree in Software Engineering and a minor in Mathematics. I'm passionate about software development, and enjoy creating projects that people will one day use and enjoy. I very much enjoy Android and Web Application development, and I have even published an Android application with more to come in the future, as well as built a company's website with responsive design. With new and upcoming technologies being introduced, I look forward to learning new skills and languages, as well as improve upon my existing skills.</p>
                 </div>
             </div>
         </div>
@@ -204,46 +463,11 @@
 
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-below">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+                        Add me on <a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=en_US" target="_blank">LinkedIn</a>
                     </div>
                 </div>
             </div>
@@ -255,230 +479,6 @@
         <a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- jQuery -->
@@ -495,7 +495,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="js/freelancer.js"></script>
 
 </body>
 

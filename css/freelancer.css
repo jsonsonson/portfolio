@@ -185,6 +185,9 @@ section h2 {
   margin: 0;
   font-size: 3em;
 }
+section h3 {
+  font-size: 2em;
+}
 section.success {
   background: #18BC9C;
   color: white;
@@ -197,6 +200,11 @@ section.success {
     padding-top: 75px;
   }
 }
+#portfolio a:hover,
+#portfolio a:focus,
+#portfolio a:active {
+  text-decoration: none;
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -204,7 +212,7 @@ section.success {
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
-  max-width: 400px;
+  max-width: 650px;
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -236,6 +244,12 @@ section.success {
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
+}
+#portfolio .portfolio-item .collapse {
+  color: #115a4a;
+}
+#portfolio .portfolio-item .collapsing {
+  color: #115a4a;
 }
 #portfolio * {
   z-index: 2;
@@ -502,4 +516,20 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.clip-circle {
+  -webkit-clip-path: circle(60px at center);
+  clip-path: circle(60px at center);
+}
+.clip-ellipse {
+  -webkit-clip-path: ellipse(130px 175px at center);
+  clip-path: ellipse(130px 175px at center);
+}
+.image-carousel {
+    background-color: #18BC9C;
+}
+.carousel-preview-image {
+  height: 400px !important;
+  width: auto;
+  margin: 0 auto;
 }

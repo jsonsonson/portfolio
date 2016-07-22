@@ -12,6 +12,16 @@
         event.preventDefault();
     });
 
+    $('.portfolio-item .portfolio-link a.collapse-link').bind('click', function(event) {
+        var $anchor = $(this);
+        if (!($($anchor.attr('href')).find('.collapse').hasClass('in'))) {
+          $('html, body').stop().animate({
+              scrollTop: ($($anchor.attr('href')).offset().top - 80)
+          }, 1250, 'easeInOutExpo');
+        }
+        event.preventDefault();
+    });
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
